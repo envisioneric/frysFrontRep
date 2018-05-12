@@ -1,0 +1,443 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : Eric Nguyen
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.PRELOADER & BOUNCE CCS STYLE
+* 03.HEADER CSS STYLE
+    -LOGO CSS
+    -SEARCH CSS
+    -ADS CSS
+* 04.NAVBAR CSS STYLE
+* 05.PROMO CSS STYLE
+	-CAROUSEL CSS
+	-BUTTONS
+* 06.PRODUCT CSS STYLE
+	-CAROUSEL CSS
+	-BUTTONS
+		-DAILY DEALS CSS
+			-PRODUCTS CSS
+* 07.COOL TECH CSS STYLE
+* 08.PRICE-MATCH CSS STYLE
+* 09.FOOTER
+	-DIRECTORY
+	-COPYRIGHT
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+body {
+	background-color: #EEEEEE;
+}
+
+.mainContainer {
+	width: 1050px;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.HEADER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.header1 {
+	display: table;
+	width: 100%;
+	margin: 15px auto;
+}
+
+.header1 .logo {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.header1 .search-container {
+	display: inline-block;
+	width: 50%;
+}
+
+/* Search Field */
+.header1 .search-container input[type=text] {
+	width: 400px;
+	font-size: 14px;
+	background-color: #EEEEEE;
+}
+
+.header1 .search-container button[type=submit] {
+	width: 65px;
+	background-color: #ED1C24;
+	color: white;
+}
+
+.header1 .adLinks {
+	display:inline-block;
+	float: right;
+}
+
+.adLinks .weeklyDealsLink {
+	display:inline-block;
+}
+
+.adLinks .promoLink {
+	display:inline-block;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.NAVBAR CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.navBar {
+
+}
+
+.dropbtn {
+	background-color: #D12D33;
+	color: white;
+	font-weight: bold;
+	margin: 1px auto;
+	padding: 5px 15px;
+	font-size: 13px;
+	border: none;
+	height: 35px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	margin-top: 1px;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	border: .5px solid black;
+	border-radius: 5%;
+}
+
+.dropdown-content p {
+	padding: 0 16px;
+	margin: 5px auto;
+	font-size: 12px;
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content p:hover {
+	padding: 0 16px;
+	margin: 5px auto;
+	background-color: black;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	background-color: white;
+}
+
+.dropdown .dummyBar {
+	background-color: #D12D33;
+	color: white;
+	font-weight: bold;
+	margin: 0px auto;
+	padding: 8px;
+	font-size: 13px;
+	border: none;
+	height: 35px;
+	width: 450px;
+}
+
+.dropdown .dummyCart {
+	background-color: #D12D33;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 0px;
+	padding: 5px;
+	font-size: 13px;
+	border: none;
+	height: 35px;
+	width: 140px;
+}
+
+.dropdown #cartIcon {
+	position: absolute;
+	left: 50px;
+	top: 0;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.CAROUSEL CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#promoCar {
+	height: 250px;
+	width: 960px;
+	margin: auto;
+	margin-bottom: 25px;
+}
+
+#productCar {
+	background-color: black;
+	height: 250px;
+	width: 960px;
+	margin: auto;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.PRODUCT SECTION CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+*------Promo Section------*
+*/
+#promoCar .carousel-indicators {
+	bottom: 0px;
+	margin-bottom: 4px;
+}
+
+.dailyDealsBar {
+	height: 25px;
+	width: 95%;
+	margin: 25px auto;
+	background-color: #EEEEEE;
+}
+
+.dailyDealsBar h1 {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #4876A3;
+}
+
+.dailyDealsBar #email {
+	margin-left: 8px;
+}
+
+.dailyDealsBar #dd {
+	color: black;
+	text-align: center;
+	width: 72%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*
+*------Hot Section------*
+*/
+.hotSect {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.hotProd {
+	width:600px;
+	display: inline-block;
+}
+
+.hotProdBar {
+	height: 25px;
+	background-color: #EEEEEE;
+	margin-bottom: 20px;
+}
+
+.hotProdBar h1 {
+	width: 100%;
+	display:inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	margin: auto;
+	text-align: center;
+}
+
+.hotSect .adSection {
+	margin-left: 25px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/*
+*------New Section------*
+*/
+.newSect {
+	width: 95%;
+	margin: 50px auto;
+}
+
+.newProd {
+	width:600px;
+	display: inline-block;
+}
+
+.newProdBar {
+	height: 25px;
+	background-color: #EEEEEE;
+	margin-bottom: 20px;
+}
+
+.newProdBar h1 {
+	width: 100%;
+	display:inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	margin: auto;
+	text-align: center;
+}
+
+.newSect .adSection {
+	margin-left: 25px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.C00L TECH CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.coolTechBar {
+	width: 100%;
+}
+
+.coolTechBar {
+	height: 25px;
+	width: 95%;
+	margin: 25px auto;
+	background-color: #EEEEEE;
+}
+
+.coolTechBar h1 {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #4876A3;
+}
+
+.coolTechBar #tech {
+	color: black;
+	text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.coolTech img {
+	display: table;
+	margin: 0 auto;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.PRICE MATCH SECTION CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.matchPrice {
+	width: 100%;
+}
+
+.matchPrice img {
+	display: table;
+	margin: 0 auto;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.footerContainer {
+}
+
+.footerLinks {
+	display: table;
+	background-color:#EEEEEE;
+	width: 1000px;
+	height: 350px;
+	margin: 30px auto;
+	margin-bottom: 0;
+}
+
+/*
+*-----Footer Lists-----*
+*/
+.linkLists {
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	font-size: 10px;
+	width: 72%;
+}
+
+.linkLists a {
+	color:#4876A3
+}
+
+.linkLists ul {
+	list-style-type: none;
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 25px;
+	padding-right: 20px;
+	vertical-align: top;
+}
+
+.linkLists li {
+	font-weight: normal;
+	width: 155px;
+}
+
+.lists {
+	padding-left: 0;
+}
+
+/*
+*-----Ad Links-----*
+*/
+
+.adLinks {
+	display: inline-block;
+	margin:10px 5px;
+	width: 24%;
+	vertical-align: top;
+}
+
+/*
+*-----Bottom Section-----*
+*/
+.bottomFoot {
+	width: 100%;
+	height: 50px;
+}
+
+.disclaimerSect {
+
+	margin: 5px;
+}
